@@ -8,8 +8,8 @@ public class Task1 {
 
     public static int check(int a){
         if (a>0) a++;
-        else if (a<0) a=a-2;
-        else if (a==0) a=10;
+            else if (a<0) a=a-2;
+            else if (a==0) a=10;
         return a;
     }
 }

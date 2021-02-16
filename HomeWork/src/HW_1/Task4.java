@@ -4,7 +4,6 @@ public class Task4 {
     public static void main(String[] args) {
         int a[] ={1,-2,30};
         System.out.println("Колличество положительных чисел " + findPositive(a)+ '\n'+  "Колличество отрцательных чисел " + findNegative(a));
-
     }
 
     public static int findPositive(int [] a) {

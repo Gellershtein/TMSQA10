@@ -15,6 +15,6 @@ public class Task6 {
                 else if (s%10==1) prg=" программист";
                     else if (s%10>=2 && s%10<=4) prg=" программиста";
                         else prg=" программистов";}
-    return prg;
+        return prg;
     }
 }
