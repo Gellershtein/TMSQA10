@@ -1,5 +1,5 @@
 package Lesson2;
-
+//2 недостающие грани ромба
 public class Task6 {
     public static void main(String[] args) {
 

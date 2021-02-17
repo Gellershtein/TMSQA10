@@ -1,5 +1,5 @@
 package Lesson2;
-
+//Весь ромб
 public class Task7 {
     public static void main(String[] args) {
 
