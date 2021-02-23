@@ -6,7 +6,6 @@ public class Task7 {
 
         for (int i = 0; i < 4; i++) {
             for (int j1 = 0; j1 < 4; j1++) {
-
                 if (j1 >= 3 - i) {
                     System.out.print("*");
                 } else {

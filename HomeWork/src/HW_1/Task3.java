@@ -2,7 +2,7 @@ package HW_1;
 
 public class Task3 {
     public static void main(String[] args) {
-        int a[] ={1,-2,30};
+        int a[] =new int[] {1,-2,30};
         System.out.println("Колличество положительных чисел " + findPositive(a));
 
     }
