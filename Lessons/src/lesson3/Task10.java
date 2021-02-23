@@ -12,20 +12,20 @@ public class Task10 {
         int n = checkScanner(scanner.nextInt());
         int[] array = new int[n];
         Random random = new Random();
-        int counter=0;
+        int counter = 0;
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(n+1);
-            if(array[i]%2==0&&array[i]!=0) {
+            array[i] = random.nextInt(n + 1);
+            if (array[i] % 2 == 0 && array[i] != 0) {
                 counter++;
             }
         }
         Task8.printArray(array);
-        if(counter==0) {
+        if (counter == 0) {
             System.out.println(" В первом массиве нет четных чисел");
-        }   else {
+        } else {
             int[] array2 = new int[counter]; // объявление тут ,что бы не выделялось мсто сразу, вдруг массив не существует
-            for (int i = 0,j=0; i < array.length; i++) {
-                if (array[i]%2==0&&array[i]!=0){
+            for (int i = 0, j = 0; i < array.length; i++) {
+                if (array[i] % 2 == 0 && array[i] != 0) {
                     array2[j] = array[i];
                     j++;
                 }

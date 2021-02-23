@@ -9,9 +9,9 @@ public class Task8 {
         double[] c = new double[10];
         Random random = new Random();
         for (int i = 0; i < a.length; i++) {
-            a[i]=random.nextInt(10);
-            b[i]=random.nextInt(10);
-            c[i]=(double) a[i]/b[i];
+            a[i] = random.nextInt(10);
+            b[i] = random.nextInt(10);
+            c[i] = (double) a[i] / b[i];
         }
         printArray(a);
         printArray(b);
@@ -23,11 +23,12 @@ public class Task8 {
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
-            if(i==array.length-1){
+            if (i == array.length - 1) {
                 System.out.println();
             }
         }
     }
+
     public static void printArrayDouble(double[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
@@ -38,10 +39,12 @@ public class Task8 {
     }
 
     public static int checkArray(double[] x) {
-        int count=0;
+        int count = 0;
 
-        for (int i = 0; i <x.length ; i++) {
-        if(x[i]%1==0){count++;}
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] % 1 == 0) {
+                count++;
+            }
         }
         return count;
     }

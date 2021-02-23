@@ -14,7 +14,7 @@ public class Task5 {
         }
         //Печать массивов
         for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]+ " ");
+            System.out.print(a[i] + " ");
         }
         System.out.println();
         for (int i = 0; i < b.length; i++) {
@@ -23,22 +23,22 @@ public class Task5 {
         System.out.println();
         System.out.println("Среднее арифм-ое массива А = " + average(a));
         System.out.println("Среднее арифм-ое массива А = " + average(b));
-        System.out.println(check(average(a),average(b)));
+        System.out.println(check(average(a), average(b)));
     }
 
-    public static int average (int[] x){
-        int average=0;
-        for (int i = 0; i <x.length ; i++) {
-            average+=x[i];
+    public static int average(int[] x) {
+        int average = 0;
+        for (int i = 0; i < x.length; i++) {
+            average += x[i];
         }
 
-        return average/(x.length-1);
+        return average / (x.length - 1);
     }
 
-    public static String check(int a,int b) {
+    public static String check(int a, int b) {
         String result = "";
-        if(a>b) result = "среднее арифметическое массива А больше Б";
-        else if(a<b) result = "среднее арифметическое массива Б больше А";
+        if (a > b) result = "среднее арифметическое массива А больше Б";
+        else if (a < b) result = "среднее арифметическое массива Б больше А";
         else result = "средние арифметические массивов равны";
         return result;
     }
