@@ -32,7 +32,7 @@ public class Task5 {
             average += x[i];
         }
 
-        return average / (x.length - 1);
+        return average / x.length;
     }
 
     public static String check(int a, int b) {

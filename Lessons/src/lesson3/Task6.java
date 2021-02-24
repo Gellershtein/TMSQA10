@@ -15,14 +15,14 @@ public class Task6 {
             System.out.print(a[i] + " ");
         }
         System.out.println();
+        boolean increase=true;
         for (int i = 0; i < a.length; i++) {
             if (i > 0 && a[i] <= a[i - 1]) {
                 System.out.println("Массив нестрого возрастающий");
+                increase=false;
                 break;
             }
+                    }
 
-            if (i == a.length - 1) System.out.println("Массив строго возрастающий");
-
-        }
     }
 }
