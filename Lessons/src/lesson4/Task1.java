@@ -13,7 +13,7 @@ public class Task1 {
         Lesson4.printArray(a);
         int sum = 0;
         for (int i = 0; i < a.length; i++) {
-            if (i % 2 == 0 && i != 0)
+            if (a[i][i] % 2 == 0)
                 sum += a[i][i];
         }
         System.out.println("Сумма четных элементов стоящих на главной диагонали равна = " + sum);
