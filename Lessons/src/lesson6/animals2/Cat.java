@@ -1,11 +1,17 @@
-package lesson6.animals;
+package lesson6.animals2;
 
 /*
 Создать класс описывающий животное Animal: имя, возраст
 Создать класс описывающий кота Cat: имя, возраст, ловит ли мышей, страница в инстаграме.
+
 Поведение(методы):
 Вывод информации
 Приветствие: для кота вывести meow
+
+Создать класс описывающий собаку Dog: имя, возраст, количество команд которые знает собака
+Вывод информации
+Приветствие: для собаки вывести woof
+Animal станет абстрактным
 */
 public class Cat extends Animal {
     private boolean isCatchMouse;
@@ -28,6 +34,6 @@ public class Cat extends Animal {
 
     @Override
     public void sayHello() {
-        System.out.println("Hello " + super.getName() + " ^_^ Meeeeooooowwwww ^_^");
+        System.out.println(super.getName() + " ^_^ Meeeeooooowwwww ^_^");
     }
 }
