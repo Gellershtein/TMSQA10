@@ -16,11 +16,11 @@ Animal станет абстрактным
 
 public class RunnerAnimal {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Barsik",3,true,"@meow");
+        Cat cat1 = new Cat("Barsik", 3, true, "@meow");
         cat1.print();
         cat1.sayHello();
 
-        Animal dog = new Dog("Jeck",2,100);
+        Animal dog = new Dog("Jeck", 2, 100);
         dog.print();
         dog.sayHello();
     }
