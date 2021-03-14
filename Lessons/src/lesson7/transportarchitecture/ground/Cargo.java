@@ -6,8 +6,8 @@ public class Cargo extends Ground {
 
     private int overWeight; // Грузоподъёмность(т)
 
-    public Cargo(int power, int max_speed, int weight, String name, int numberOfWheels, double fuelUsage, int overWeight) {
-        super(power, max_speed, weight, name, numberOfWheels, fuelUsage);
+    public Cargo(int power, int maxSpeed, int weight, String name, int numberOfWheels, double fuelUsage, int overWeight) {
+        super(power, maxSpeed, weight, name, numberOfWheels, fuelUsage);
         this.overWeight = overWeight; //Грузоподъёмность(т)
     }
 

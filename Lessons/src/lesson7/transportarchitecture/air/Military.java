@@ -5,8 +5,8 @@ public class Military extends Air {
     private int numberOfRockets; // Кол-во ракет на борту
     private int count;
 
-    public Military(int power, int max_speed, int weight, String name, double wingspan, double min_flylegth, boolean hasEjection, int numberOfRockets) {
-        super(power, max_speed, weight, name, wingspan, min_flylegth);
+    public Military(int power, int maxSpeed, int weight, String name, double wingspan, double min_flylegth, boolean hasEjection, int numberOfRockets) {
+        super(power, maxSpeed, weight, name, wingspan, min_flylegth);
         this.hasEjection = hasEjection;
         this.numberOfRockets = numberOfRockets;
     }

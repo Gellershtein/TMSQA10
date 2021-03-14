@@ -4,8 +4,8 @@ public class Civilian extends Air {
     private int numberOfPassengers; //Кол-во пассажиров
     private boolean hasBusinessClass; //Есть ли бизнес класс
 
-    public Civilian(int power, int max_speed, int weight, String name, double wingspan, double min_flylegth, int numberOfPassengers, boolean hasBusinessClass) {
-        super(power, max_speed, weight, name, wingspan, min_flylegth);
+    public Civilian(int power, int maxSpeed, int weight, String name, double wingspan, double min_flylegth, int numberOfPassengers, boolean hasBusinessClass) {
+        super(power, maxSpeed, weight, name, wingspan, min_flylegth);
         this.numberOfPassengers = numberOfPassengers;
         this.hasBusinessClass = hasBusinessClass;
     }

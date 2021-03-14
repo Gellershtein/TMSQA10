@@ -6,8 +6,8 @@ public abstract class Air extends Transport {
     private double wingspan;//Размах крыльев (м)
     private double min_flylegth;//Минимальная длина взлётно-посадочной полосы для взлёта
 
-    public Air(int power, int max_speed, int weight, String name, double wingspan, double min_flylegth) {
-        super(power, max_speed, weight, name);
+    public Air(int power, int maxSpeed, int weight, String name, double wingspan, double min_flylegth) {
+        super(power, maxSpeed, weight, name);
         this.wingspan = wingspan;
         this.min_flylegth = min_flylegth;
     }

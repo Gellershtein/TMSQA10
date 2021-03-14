@@ -4,8 +4,8 @@ public class Passenger extends Ground {
     private String carType; //Тип кузова
     private int numberOfPassengers; //Кол-во пассажиров
 
-    public Passenger(int power, int max_speed, int weight, String name, int numberOfWheels, double fuelUsage, String carType, int numberOfPassengers) {
-        super(power, max_speed, weight, name, numberOfWheels, fuelUsage);
+    public Passenger(int power, int maxSpeed, int weight, String name, int numberOfWheels, double fuelUsage, String carType, int numberOfPassengers) {
+        super(power, maxSpeed, weight, name, numberOfWheels, fuelUsage);
         this.carType = carType;
         this.numberOfPassengers = numberOfPassengers;
     }
@@ -31,8 +31,8 @@ public class Passenger extends Ground {
     расчёт израсходуемого топлива вынести в отдельный метод private.*/
     public void distance(double time)//принирмает время в часах
     {
-        double distance = getMax_speed() * time;
-        System.out.printf("За время %.1f ч, автомобиль %s двигаясь с максимальной скоростью %d км/ч проедет %.1f км и израсходует %.1f литров топлива.\n", time, getName(), getMax_speed(), distance, spendLiters(distance));
+        double distance = getMaxSpeed() * time;
+        System.out.printf("За время %.1f ч, автомобиль %s двигаясь с максимальной скоростью %d км/ч проедет %.1f км и израсходует %.1f литров топлива.\n", time, getName(), getMaxSpeed(), distance, spendLiters(distance));
     }
 
     private double spendLiters(double distance) {
