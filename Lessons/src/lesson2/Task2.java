@@ -1,4 +1,4 @@
-package Lesson2;
+package lesson2;
 //16513
 public class Task2 {
     public static void main(String[] args) {

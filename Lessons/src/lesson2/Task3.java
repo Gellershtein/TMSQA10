@@ -1,4 +1,4 @@
-package Lesson2;
+package lesson2;
 
 //17.71561
 public class Task3 {
