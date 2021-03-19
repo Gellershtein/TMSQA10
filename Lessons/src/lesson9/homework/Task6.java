@@ -20,7 +20,7 @@ public class Task6 {
         System.out.println(replaceToOOP(row));
     }
 
-    public static String  replaceToOOP(String row) {
+    public static String replaceToOOP(String row) {
         String[] newRow = row.split("object-oriented programming");
         int count = 0;
         for (int i = 0; i < newRow.length; i++) {

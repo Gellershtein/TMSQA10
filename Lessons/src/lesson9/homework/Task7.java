@@ -9,7 +9,7 @@ public class Task7 {
     public static void main(String[] args) {
 
         System.out.println("Введите строку(длина - четное число)");
-        String row =inputString();
+        String row = inputString();
         returnMiddleSymbols(row);
     }
 
@@ -19,7 +19,7 @@ public class Task7 {
             Scanner sc = new Scanner(System.in);
             String input = sc.nextLine();
             if (input.length() % 2 == 0) {
-                row=input;
+                row = input;
                 break;
             } else {
                 System.out.println("Введите строку с четной длинной");
