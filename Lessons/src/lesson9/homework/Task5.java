@@ -19,21 +19,21 @@ public class Task5 {
             System.out.println("Строки идентичны");
         } else {
 
-            String[] s1split= s1.split(" ");
-            String[] s2split= s2.split(" ");
+            String[] s1split = s1.split(" ");
+            String[] s2split = s2.split(" ");
             boolean[] count = new boolean[s1split.length];
             for (int i = 0; i < s1split.length; i++) {
-                if (s1split[i].equals(s2split[i])){
-                    count[i]=true;
+                if (s1split[i].equals(s2split[i])) {
+                    count[i] = true;
                 }
             }
-            int countTrue=0;
+            int countTrue = 0;
             for (boolean check : count) {
                 if (check) {
                     countTrue++;
                 }
             }
-            System.out.println("Колличество слов которые совпадают: " + countTrue );
+            System.out.println("Колличество слов которые совпадают: " + countTrue);
         }
     }
 }

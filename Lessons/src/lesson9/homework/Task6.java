@@ -14,10 +14,10 @@ public class Task6 {
     public static void main(String[] args) {
         String row = "Object-oriented programming is a programming language model organized around objects rather than \"actions\" and data rather than logic. Object-oriented programming blabla. Object-oriented programming bla. Object-oriented programming blabla. Object-oriented programming blabla. Object-oriented programming bla. Object-oriented programming blabla.";
         String change = "object-oriented programming";
-        String changeTo="OOP";
+        String changeTo = "OOP";
         System.out.println(row);
         String lower = row.toLowerCase();
-        replaceToOOP(row, change,changeTo);
+        replaceToOOP(row, change, changeTo);
     }
 
 
@@ -35,12 +35,12 @@ public class Task6 {
                 fIndex = newRow.toLowerCase().indexOf(change, fIndex + 1);//"object-oriented programming"
                 if (fIndex != -1) {
                     count++;
-                    if (count%2==0){
-                        split.add(newRow.substring(0,fIndex));
+                    if (count % 2 == 0) {
+                        split.add(newRow.substring(0, fIndex));
                         newRow = newRow.substring(fIndex);
                         split.add(changeTo);
                         fIndex = newRow.toLowerCase().indexOf(change);
-                        newRow = newRow.substring(fIndex+lenght);
+                        newRow = newRow.substring(fIndex + lenght);
                     }
                 } else {
                     break;
@@ -49,7 +49,7 @@ public class Task6 {
             split.add(newRow);
         }
         for (int i = 0; i < split.toArray().length; i++) {
-        System.out.print(split.get(i));
+            System.out.print(split.get(i));
         }
     }
 }

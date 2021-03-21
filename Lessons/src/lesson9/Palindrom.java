@@ -24,15 +24,15 @@ public class Palindrom {
 //    }
 
 
-        public static void palidCheck(String row){
-            boolean check=true;
-            for (int i = 0; i <row.length() ; i++) {
-                if(row.charAt(i)!=row.charAt(row.length()-i-1)){
-                    System.out.println("Строка не палиндром");
-                    check=false;
-                    break;
-                }
+    public static void palidCheck(String row) {
+        boolean check = true;
+        for (int i = 0; i < row.length(); i++) {
+            if (row.charAt(i) != row.charAt(row.length() - i - 1)) {
+                System.out.println("Строка не палиндром");
+                check = false;
+                break;
             }
-            System.out.println(check?"Строка палиндром":"");
         }
+        System.out.println(check ? "Строка палиндром" : "");
+    }
 }
