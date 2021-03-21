@@ -1,8 +1,6 @@
 package lesson9.homework;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Locale;
 
 /*
 6.	Напишите метод, заменяющий в строке каждое второе вхождение «object-oriented programming» (не учитываем регистр символов) на «OOP».
@@ -19,26 +17,11 @@ public class Task6 {
         String changeTo="OOP";
         System.out.println(row);
         String lower = row.toLowerCase();
-//        System.out.println(lower);
-//        System.out.println(replaceToOOP(lower));
-        ind(row, change,changeTo);
+        replaceToOOP(row, change,changeTo);
     }
 
-    //    public static String replaceToOOP(String row) {
-//        StringBuilder newRow = new StringBuilder(row);
-////        String[] newRow = row.split("object-oriented programming");
-//        int count = 0;
-//        for (int i = 0; i < newRow.length; i++) {
-//            if (newRow[i].equalsIgnoreCase("object-oriented programming")) {
-//                count++;
-//                if (count % 2 == 0) {
-//                    newRow[i] = "OOP";
-//                }
-//            }
-//        }
-//        return Arrays.toString(newRow);
-//    }
-    public static void ind(String row, String change, String changeTo) {
+
+    public static void replaceToOOP(String row, String change, String changeTo) {
         String newRow = row;
         ArrayList<String> split = new ArrayList<>();
         int count = 0;
@@ -59,8 +42,6 @@ public class Task6 {
                         fIndex = newRow.toLowerCase().indexOf(change);
                         newRow = newRow.substring(fIndex+lenght);
                     }
-//                split.add(newRow.substring(lIndex,fIndex));
-//                newRow = newRow.substring(fIndex);
                 } else {
                     break;
                 }
@@ -73,7 +54,7 @@ public class Task6 {
     }
 }
 
-//    public static void ind (String row,String change) {
+//    public static void replaceToOOP (String row,String change) {
 //        StringBuilder newRow = new StringBuilder(row);
 //        String input = row.toLowerCase();
 //        String search= input;
@@ -95,6 +76,6 @@ public class Task6 {
 //            }
 ////                newRow.replace(fIndex,lIndex,"OOP");
 //        }
-//        System.out.println("No of *is* in the input is : " + count);
+//        System.out.println("No of *OOP* in the input is : " + count);
 //    }
 //}
